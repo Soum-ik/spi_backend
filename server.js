@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import mongoose from "mongoose";
-import routes from "./routes/api.js";
+import routes from "./src/routes/api.js";
 import rateLimit from "express-rate-limit";
 const app = express();
 import {
@@ -12,7 +12,7 @@ import {
   URL_ENCODED,
   REQUEST_LIMIT_NUMBER,
   REQUEST_LIMIT_TIME,
-} from "../src/config/config.js";
+} from "./src/config/config.js";
 
 // port
 const port = PORT || 5000;

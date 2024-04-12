@@ -48,5 +48,5 @@ app.get("/", async (req, res) => {
 
 //
 app.listen(port, () => {
-  console.log("Listening to port:", port);
+  console.log(`http://localhost:${port}`, port);
 });

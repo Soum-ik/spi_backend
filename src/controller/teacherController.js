@@ -39,3 +39,13 @@ export const update = async (req, res) => {
     return res.json({ error: error.message || "Internal Server Error" });
   }
 };
+export const singleData = async (req, res) => {
+  try {
+    const { name } = req.params;
+
+    const result = await Teacher.findOne({ name: name });
+    return res.json({ message: "Item updated successfully", data: result });
+  } catch (error) {
+    return res.json({ error: error.message || "Internal Server Error" });
+  }
+};

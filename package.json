@@ -17,5 +17,8 @@
   },
   "author": "SOUMIK SARKAR",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "engines": {
+    "node": "18.19.1"
+  }
 }

@@ -1,5 +1,0 @@
-router.get("/event/get", eventController.get);
-router.post("/event/create", eventController.create);
-router.delete("/event/delete/:id", eventController.remove);
-router.put("/event/update/:id", eventController.update);
-router.patch("/event/one/:name", eventController.singleData);

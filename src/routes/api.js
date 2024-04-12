@@ -1,7 +1,8 @@
 import express from "express";
 const router = express.Router();
 import * as teacherController from "../controller/teacherController.js";
-import * as noticController from "../controller/noticController.js"; 
+import * as noticController from "../controller/noticController.js";
+import * as eventController from "../controller/eventController.js";
 
 // Teacher api
 router.get("/teacher/get", teacherController.get);
@@ -16,5 +17,12 @@ router.post("/notic/create", noticController.create);
 router.delete("/notic/delete/:id", noticController.remove);
 router.put("/notic/update/:id", noticController.update);
 router.patch("/notic/one/:name", noticController.singleData);
+
+// event api
+router.get("/event/get", eventController.get);
+router.post("/event/create", eventController.create);
+router.delete("/event/delete/:id", eventController.remove);
+router.put("/event/update/:id", eventController.update);
+router.patch("/event/one/:name", eventController.singleData);
 
 export default router;

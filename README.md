@@ -110,4 +110,52 @@ All endpoints are relative to the base URL: `http://localhost:6969/api/`
 
 ## Event Endpoints
 
-No specific documentation available for event endpoints.
+### DELETE Event
+- **URL**: `/event/delete/{event_id}`
+- **Method**: `DELETE`
+- **Description**: Deletes an event by ID.
+- **Success Response**: `200 OK`, `202 Accepted`, or `204 No Content`
+
+### POST Event
+- **URL**: `/event/create`
+- **Method**: `POST`
+- **Description**: Creates a new event.
+- **Request Body**:
+```json
+{
+    "event_name": "new event",
+    "description": "Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959",
+    "date": "12 june 2032",
+    "thumbnail": "image.jpg",
+    "detail": "Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959. Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959"
+}
+```
+- Success Response: 200 OK or 201 Created
+
+### GET Event
+- **URL**: `/event/get
+- **Method**: `GET` 
+- **Success Response**: `200 OK`, `202 Accepted`, or `204 No Content`
+
+### PUT Event
+- **URL**: `/event/update/{event_id}`
+- **Method**: `PUT`
+- **Description**: Update event.
+- **Request Body**:
+```json
+{
+    "event_name": "new event",
+    "description": "Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959",
+    "date": "12 june 2032",
+    "thumbnail": "image.jpg",
+    "detail": "Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959. Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959"
+}
+```
+- Success Response: 200 OK or 201 Created
+- 
+### PATCH Event
+- **URL**: `/event/one/{event_name}`
+- **Method**: `PATCH`
+
+
+ @SOUMIK SARKAR

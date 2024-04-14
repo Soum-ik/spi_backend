@@ -75,6 +75,14 @@ All endpoints are relative to the base URL: `http://localhost:6969/api/`
 ### POST Notice
 - **URL**: `/notic/create`
 - **Method**: `POST`
+
+```json
+     {
+    "notic_name": "festival",
+    "details": "Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959",
+    "date": "12 jun 2003"
+}
+```
 - **Success Response**: `200 OK` or `201 Created`
 
 ### GET Notice
@@ -84,6 +92,14 @@ All endpoints are relative to the base URL: `http://localhost:6969/api/`
 ### PUT Notice
 - **URL**: `/notic/update/{notice_id}`
 - **Method**: `PUT`
+
+```json
+     {
+    "notic_name": "price",
+    "details": "Sylhet Polytechnic Institute or SPI is a state supported technical academic institute located in Sylhet, Bangladesh. It was established in 1955 by the then East Pakistan government. It was named as Sylhet Polytechnic Institute in 1959",
+    "date": "12 jun 2003"
+}
+```
 - **Success Response**: `200 OK`, `201 Created`, or `204 No Content`
 
 ### PATCH Notice

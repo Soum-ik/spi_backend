@@ -1,4 +1,4 @@
-# My Workspace API Documentation
+# API Documentation
 
 ## Introduction
 Welcome to the My Workspace API documentation. This API provides endpoints for managing teachers, notices, and events.

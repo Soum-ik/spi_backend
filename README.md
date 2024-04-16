@@ -8,6 +8,13 @@ All endpoints are relative to the base URL: `http://localhost:6969/api/`
 
 ---
 
+## Result Endpoints
+
+### GET Result
+- **URL**: `/result/243989`
+- **Method**: `GET`
+
+
 ## Teacher Endpoints
 
 ### DELETE Teacher

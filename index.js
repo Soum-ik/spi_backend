@@ -34,28 +34,28 @@ mongoose
   .then(() => {
     console.log("Database Connected");
 
-    // Accessing MongoDB resultCollection after the connection is established
-    const resultCollection = mongoose.connection.db.collection("result");
+    // // Accessing MongoDB resultCollection after the connection is established
+    // const resultCollection = mongoose.connection.db.collection("result");
 
-    // Assuming 'identifier' is the identifier you want to search for
-    app.get("/api/result/:identifier", async (req, res) => {
-      const identifier = req.params.identifier;
+    // // Assuming 'identifier' is the identifier you want to search for
+    // app.get("/api/result/:identifier", async (req, res) => {
+    //   const identifier = req.params.identifier;
 
-      try {
-        const result = await resultCollection.findOne({
-          [identifier]: { $exists: true },
-        });
+    //   try {
+    //     const result = await resultCollection.findOne({
+    //       [identifier]: { $exists: true },
+    //     });
 
-        if (result) {
-          res.status(200).json(result[identifier]);
-        } else {
-          res.status(404).json({ error: "Result not found" });
-        }
-      } catch (error) {
-        console.error("Error fetching result:", error);
-        res.status(500).json({ error: "Internal server error" });
-      }
-    });
+    //     if (result) {
+    //       res.status(200).json(result[identifier]);
+    //     } else {
+    //       res.status(404).json({ error: "Result not found" });
+    //     }
+    //   } catch (error) {
+    //     console.error("Error fetching result:", error);
+    //     res.status(500).json({ error: "Internal server error" });
+    //   }
+    // });
 
     // API routes
     app.use("/api", routes);

@@ -192,3 +192,6 @@ All endpoints are relative to the base URL: `https://spi-backend.vercel.app/api/
 - **Method**: `PATCH`
 
 @SOUMIK SARKAR
+
+Client-side: https://computer-club-spi.vercel.app/  
+

@@ -4,6 +4,7 @@ import * as teacherController from "../controller/teacherController.js";
 import * as noticController from "../controller/noticController.js";
 import * as eventController from "../controller/eventController.js";
 import * as resultController from "../controller/resultController.js";
+import * as userController from "../controller/userController.js";
 
 // Teacher api
 router.get("/teacher/get", teacherController.get);
@@ -28,5 +29,9 @@ router.patch("/event/one/:name", eventController.singleData);
 
 // result api
 router.get("/result", resultController.get);
+
+// user
+router.post("/signup", userController.post);
+router.get("/signin", userController.get);
 
 export default router;
